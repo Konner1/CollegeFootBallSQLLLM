@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="780" font-family="Menlo,monospace" font-size="12">
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="40" y="40" width="300" height="74" fill="#f6f8fa" stroke="#24292f"/>
+<rect x="40" y="40" width="300" height="26" fill="#0b3d91"/>
+<text x="48" y="58" fill="#fff" font-weight="bold">conferences</text>
+<text x="48" y="86" xml:space="preserve">PK conference_id <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="48" y="106" xml:space="preserve">   conference_name <tspan fill="#6e7781">TEXT</tspan></text>
+<rect x="40" y="250" width="300" height="74" fill="#f6f8fa" stroke="#24292f"/>
+<rect x="40" y="250" width="300" height="26" fill="#0b3d91"/>
+<text x="48" y="268" fill="#fff" font-weight="bold">teams</text>
+<text x="48" y="296" xml:space="preserve">PK team_id <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="48" y="316" xml:space="preserve">   team_name <tspan fill="#6e7781">TEXT</tspan></text>
+<rect x="380" y="100" width="300" height="174" fill="#f6f8fa" stroke="#24292f"/>
+<rect x="380" y="100" width="300" height="26" fill="#0b3d91"/>
+<text x="388" y="118" fill="#fff" font-weight="bold">team_seasons</text>
+<text x="388" y="146" xml:space="preserve">PK team_season_id <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="166" xml:space="preserve">FK team_id <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="186" xml:space="preserve">   season <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="206" xml:space="preserve">FK conference_id <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="226" xml:space="preserve">   games <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="246" xml:space="preserve">   wins <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="266" xml:space="preserve">   losses <tspan fill="#6e7781">INTEGER</tspan></text>
+<rect x="760" y="20" width="300" height="414" fill="#f6f8fa" stroke="#24292f"/>
+<rect x="760" y="20" width="300" height="26" fill="#0b3d91"/>
+<text x="768" y="38" fill="#fff" font-weight="bold">offense</text>
+<text x="768" y="66" xml:space="preserve">PK team_season_id <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="86" xml:space="preserve">   plays <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="106" xml:space="preserve">   total_yards <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="126" xml:space="preserve">   yards_per_game <tspan fill="#6e7781">REAL</tspan></text>
+<text x="768" y="146" xml:space="preserve">   touchdowns <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="166" xml:space="preserve">   total_points <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="186" xml:space="preserve">   points_per_game <tspan fill="#6e7781">REAL</tspan></text>
+<text x="768" y="206" xml:space="preserve">   pass_attempts <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="226" xml:space="preserve">   pass_completions <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="246" xml:space="preserve">   pass_yards <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="266" xml:space="preserve">   pass_tds <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="286" xml:space="preserve">   rush_attempts <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="306" xml:space="preserve">   rush_yards <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="326" xml:space="preserve">   rush_tds <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="346" xml:space="preserve">   first_downs <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="366" xml:space="preserve">   third_down_attempts <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="386" xml:space="preserve">   third_down_conversions <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="406" xml:space="preserve">   redzone_attempts <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="426" xml:space="preserve">   redzone_scores <tspan fill="#6e7781">INTEGER</tspan></text>
+<rect x="760" y="500" width="300" height="214" fill="#f6f8fa" stroke="#24292f"/>
+<rect x="760" y="500" width="300" height="26" fill="#0b3d91"/>
+<text x="768" y="518" fill="#fff" font-weight="bold">defense</text>
+<text x="768" y="546" xml:space="preserve">PK team_season_id <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="566" xml:space="preserve">   points_allowed <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="586" xml:space="preserve">   yards_allowed <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="606" xml:space="preserve">   pass_yards_allowed <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="626" xml:space="preserve">   rush_yards_allowed <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="646" xml:space="preserve">   sacks <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="666" xml:space="preserve">   tackles_for_loss <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="686" xml:space="preserve">   interceptions <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="768" y="706" xml:space="preserve">   fumbles_recovered <tspan fill="#6e7781">INTEGER</tspan></text>
+<rect x="380" y="420" width="300" height="174" fill="#f6f8fa" stroke="#24292f"/>
+<rect x="380" y="420" width="300" height="26" fill="#0b3d91"/>
+<text x="388" y="438" fill="#fff" font-weight="bold">game_management</text>
+<text x="388" y="466" xml:space="preserve">PK team_season_id <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="486" xml:space="preserve">   penalties <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="506" xml:space="preserve">   penalty_yards <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="526" xml:space="preserve">   turnovers_gained <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="546" xml:space="preserve">   turnovers_lost <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="566" xml:space="preserve">   turnover_margin <tspan fill="#6e7781">INTEGER</tspan></text>
+<text x="388" y="586" xml:space="preserve">   time_of_possession_seconds <tspan fill="#6e7781">INTEGER</tspan></text>
+<path d="M380,202 C360.0,202 360.0,53 340,53" fill="none" stroke="#cf222e" stroke-width="1.5"/>
+<circle cx="340" cy="53" r="4" fill="#cf222e"/>
+<path d="M380,162 C360.0,162 360.0,263 340,263" fill="none" stroke="#cf222e" stroke-width="1.5"/>
+<circle cx="340" cy="263" r="4" fill="#cf222e"/>
+<path d="M760,62 C720.0,62 720.0,113 680,113" fill="none" stroke="#cf222e" stroke-width="1.5"/>
+<circle cx="680" cy="113" r="4" fill="#cf222e"/>
+<path d="M760,542 C720.0,542 720.0,113 680,113" fill="none" stroke="#cf222e" stroke-width="1.5"/>
+<circle cx="680" cy="113" r="4" fill="#cf222e"/>
+<path d="M530.0,274 L530.0,420" fill="none" stroke="#cf222e" stroke-width="1.5"/>
+<circle cx="530.0" cy="420" r="4" fill="#cf222e"/>
+</svg>

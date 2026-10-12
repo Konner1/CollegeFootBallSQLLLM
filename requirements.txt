@@ -1,0 +1,3 @@
+# Optional: fixes SSL certificate errors with python.org Python on macOS.
+# Everything else uses only the standard library.
+certifi
